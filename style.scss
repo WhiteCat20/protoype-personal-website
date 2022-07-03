@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+
+$default-bg-color: #2DD4BF;
+$default-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+$base-text-color: #FFF;
+$base-font: 'Poppins', sans-serif;
+
+
+body{
+  background: rgb(94,234,212);
+  background: linear-gradient(90deg, rgba(94,234,212,1) 0%, rgba(101,137,243,1) 100%);
+  font-family: $base-font;
+}
+
+
+@media (max-width: 1399px) {
+  .sidebar{
+    margin: auto;
+  }
+  .bar-wrapper{
+    flex-direction: column;
+  }
+
+
+}
+@media (min-width: 1399px) {
+  .sidebar{
+    position: sticky;
+    top: 30px;
+    // left: 20px;
+    right: 1800px;
+    width: 299px;
+    
+  }
+  .list-sidebar{
+    width: 248px;
+  }
+}
+
+.sidebar{
+  .sidebar-content{
+    padding-top: 30px;
+  }
+  // display: none;
+  box-shadow: $default-shadow;
+  margin-top: 20px;
+  background-color: $default-bg-color;
+  
+  height: 700px;
+  border-radius: 45px;
+  .profile-name{
+    color: $base-text-color;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 53px;
+  }
+  .list-sidebar{
+    box-shadow: $default-shadow;
+    margin: auto;
+    height: 69px;
+    border-radius: 17px;
+    p{
+      color: $base-text-color;
+      padding-top: 22px;
+      font-size: 20px;
+    }
+  }
+  .list-sidebar:hover{
+    background-color: #65F3DD;
+    cursor: pointer;
+  }
+}
+
+.sidebar-normal{
+  background-color: #41DDC8;
+  transition: 0.3s;
+}
+
+.sidebar-hover{
+  background-color: #65F3DD;
+  cursor: pointer;
+}
+
+@media (min-width: 1399px) {
+  .mainbar{
+    margin: auto;
+    width: 975px;
+  }
+}
+
+.mainbar{
+  position: relative;
+  margin: auto;
+  background-color: $default-bg-color;
+  box-shadow: $default-shadow;
+  border-radius: 40px;
+  margin-top: 20px;
+  height: 100px;
+  height: 700px;
+  //Home
+  .profile-name{
+    padding-top: 216px;
+    color: $base-text-color;
+    font-size: 54px;
+    font-weight: 500;
+  }
+
+  .messageFromDev{
+    font-size: 24px;
+    font-weight: 300;
+    text-align: justify;
+    color: $base-text-color;
+  }
+
+  .tag{
+    margin-top: 40px;
+    color: $base-text-color
+  }
+  .quote-wrapper{
+    margin-top: 40px;
+    width: 70%;
+    color: $base-text-color;
+    font-size: 32px - 10px;
+  }
+  
+}
+
+
+.main-profile{
+  display: none;
+    .profile-box{
+      width: 648px;
+      max-height: 100%;
+      background-color: #5EEAD4;
+      margin: auto;
+      margin-bottom: 10px;
+      border-radius: 20px;
+      box-shadow: $default-shadow;
+    }
+    .wrapper-profile{
+      color: #FFF;
+      font-weight: 500;
+      font-size: 20px;
+    }
+}
+
+.title{
+  margin-top: 300px;
+}
+
+.main-experience{
+  display: none;
+  .title{
+    width: 368px;
+    height: 80px;
+    background-color: #F7ECDE;
+    box-shadow: $default-shadow;
+    border-radius: 90px;
+    font-weight: bolder;
+    padding-top: 22px;
+    font-size: 25px;
+    color: #54BAB9;
+    
+  }
+  .year-22{
+    width: 157px;
+    height: 56px;
+    background-color: #5EEAD4;
+    border-radius: 80px;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 24px;
+    padding-top: 12px;
+    margin-bottom: 235px;
+  }
+}
+.main-skill{
+  display: none;
+  .title{
+    width: 368px;
+    height: 80px;
+    background-color: #F7ECDE;
+    box-shadow: $default-shadow;
+    border-radius: 90px;
+    font-weight: bolder;
+    padding-top: 22px;
+    font-size: 25px;
+    color: #54BAB9;
+    
+  }
+}
+.main-project{
+  display: none;
+  .title{
+    width: 368px;
+    height: 80px;
+    background-color: #F7ECDE;
+    box-shadow: $default-shadow;
+    border-radius: 90px;
+    font-weight: bolder;
+    padding-top: 22px;
+    font-size: 25px;
+    color: #54BAB9;
+    
+  }
+}
